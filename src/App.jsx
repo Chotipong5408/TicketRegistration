@@ -6,5 +6,4 @@ function App() {
   <span>C</span>
   </>;
 }
-
 export default App;
