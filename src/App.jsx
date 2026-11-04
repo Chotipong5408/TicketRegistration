@@ -16,7 +16,7 @@ import Checkout from "./pages/Checkout";
 import Payment from "./pages/Payment";
 import ScanPayment from "./pages/ScanPayment";
 
-/* User account pages — TODO: uncomment when pages have content
+/* User account pages */
 import AccountHome from "./pages/account/AccountHome";
 import Profile from "./pages/account/Profile";
 import Orders from "./pages/account/Orders";
@@ -24,9 +24,8 @@ import MyTickets from "./pages/account/MyTickets";
 import Wallet from "./pages/account/Wallet";
 import Transactions from "./pages/account/Transactions";
 import MyMerchandise from "./pages/account/MyMerchandise";
-*/
 
-/* Admin pages — TODO: uncomment when pages have content
+/* Admin pages */
 import AdminDashboard from "./pages/admin/Dashboard";
 import AdminUsers from "./pages/admin/Users";
 import AdminTicketTypes from "./pages/admin/TicketTypes";
@@ -42,7 +41,6 @@ import AdminCheckin from "./pages/admin/Checkin";
 import AdminReports from "./pages/admin/Reports";
 import AdminAuditLogs from "./pages/admin/AuditLogs";
 import AdminSettings from "./pages/admin/Settings";
-*/
 
 /* Event Admin pages */
 import TokenDashboard from "./pages/token/Dashboard";
@@ -50,14 +48,13 @@ import TokenTopup from "./pages/token/Topup";
 import TokenTransactions from "./pages/token/Transactions";
 import TokenScan from "./pages/token/Scan";
 
-/* Store Admin pages — TODO: uncomment when pages have content
+/* Store Admin pages */
 import StoreDashboard from "./pages/store/Dashboard";
 import StoreProduct from "./pages/store/Product";
 import StorePaymentRequests from "./pages/store/PaymentRequests";
 import StoreScanPayment from "./pages/store/ScanPayment";
 import StoreTransactions from "./pages/store/Transactions";
 import StoreReports from "./pages/store/Reports";
-*/
 
 export default function App() {
   const { user } = useAuth();
@@ -85,7 +82,7 @@ export default function App() {
         <Route path="/payment/:paymentId" element={<Payment />} />
         <Route path="/scan-payment" element={<ScanPayment />} />
 
-        {/* User account — TODO: uncomment when pages have content
+        {/* User account */}
         <Route path="/account" element={<AccountHome />} />
         <Route path="/account/profile" element={<Profile />} />
         <Route path="/account/orders" element={<Orders />} />
@@ -93,9 +90,8 @@ export default function App() {
         <Route path="/account/wallet" element={<Wallet />} />
         <Route path="/account/transactions" element={<Transactions />} />
         <Route path="/account/merchandise" element={<MyMerchandise />} />
-        */}
 
-        {/* Super Admin — TODO: uncomment when pages have content
+        {/* Super Admin */}
         <Route
           path="/admin/dashboard"
           element={
@@ -216,7 +212,6 @@ export default function App() {
             </RequireRole>
           }
         />
-        */}
 
         {/* Event Admin */}
         <Route
@@ -252,7 +247,7 @@ export default function App() {
           }
         />
 
-        {/* Store Admin — TODO: uncomment when pages have content
+        {/* Store Admin */}
         <Route
           path="/store/dashboard"
           element={
@@ -301,7 +296,6 @@ export default function App() {
             </RequireRole>
           }
         />
-        */}
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />
