@@ -299,6 +299,10 @@ export default function App() {
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />
+      <h1>hi</h1>
     </Routes>
+
+
+
   );
 }
