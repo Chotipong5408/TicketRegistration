@@ -3,6 +3,7 @@ import UserRoleManagement from "./pages/UserRoleManagement";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SuperAdminDashboard from "./pages/SuperAdminDashboard";
 import Carts from "./pages/carts";
+import OrderReview from "./pages/OrderReview";
 
 
 function Home() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/super-admin/users" element={<UserRoleManagement />} />
 
         <Route path="/carts" element={<Carts />} />
+        <Route path="/super-admin/orders" element={<OrderReview />} />
 
 
         {/* Event Admin — เปิดใช้เมื่อ import ด้านบนพร้อมแล้ว
