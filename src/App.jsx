@@ -300,9 +300,14 @@ export default function App() {
 
       <Route path="*" element={<Navigate to="/" replace />} />
       <h1>hi</h1>
+
       <span>123</span>
       <span>peem</span>
       <p>qweqwe</p>
+
+       <span>hello</span>
+       <p>peem</p>
+
     </Routes>
 
 
