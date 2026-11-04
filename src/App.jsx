@@ -1,3 +1,5 @@
+import UserRoleManagement from "./pages/UserRoleManagement";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SuperAdminDashboard from "./pages/SuperAdminDashboard";
 
@@ -22,9 +24,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/super-admin" element={<SuperAdminDashboard />} />
+        <Route path="/super-admin/users" element={<UserRoleManagement />} />
       </Routes>
     </BrowserRouter>
   );
 }
-
 export default App;
